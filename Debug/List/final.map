@@ -1,0 +1,60 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+adc_data                                                                          0x03F9       4
+input_index                                                                       0x03FD       1
+rx_buffer                                                                         0x03FE      12
+shift                                                                             0x040A       4
+layout                                                                            0x040E      16
+tx_buffer                                                                         0x041E      16
+tx_wr_index                                                                       0x042E       1
+tx_rd_index                                                                       0x042F       1
+tx_counter                                                                        0x0430       1
+entrance_status1                                                                  0x0431       4
+entrance_status2                                                                  0x0435       6
+keypad_w_index                                                                    0x043B       2
+keypad_buffer                                                                     0x043D       3
+_base_y                                                                           0x0440       4
+_lcd_x                                                                            0x0444       1
+_lcd_y                                                                            0x0445       1
+_lcd_maxx                                                                         0x0446       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+fire1                                                                             R4,R5        2
+fire2                                                                             R6,R7        2
+rx_wr_index                                                                       R9           1
+rx_rd_index                                                                       R8           1
+rx_counter                                                                        R11          1
+rx_buffer_overflow                                                                R2.0      1bit
+inside_counter                                                                    R12,R13      2
+position                                                                          R10          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x00184      2
+timer1_ovf_isr                                                                    0x00186      7
+adc_isr                                                                           0x0018D     92
+usart_rx_isr                                                                      0x001E9     67
+usart_tx_isr                                                                      0x0022C     36
+putchar                                                                           0x00250     41
+keypad                                                                            0x00279     50
+clear_buffer                                                                      0x002AB     22
+people_inside1                                                                    0x002C1     18
+people_inside2                                                                    0x002D3     22
+ext_int2_isr                                                                      0x002E9    195
+lcd_show                                                                          0x003AC     25
+main                                                                              0x003C5    309
+_lcd_write_nibble_G101                                                            0x004FA     20
+_lcd_write_data                                                                   0x0050E     12
+lcd_gotoxy                                                                        0x0051A     17
+lcd_clear                                                                         0x0052B     14
+lcd_putchar                                                                       0x00539     32
+lcd_puts                                                                          0x00559     17
+lcd_init                                                                          0x0056A     47
