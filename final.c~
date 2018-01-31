@@ -334,7 +334,7 @@ void clear_buffer(){
            lcd_clear();
            lcd_puts("System OFF.");
            PORTD.4 = 0;
-           PORTD.4 = 7;                     
+           PORTD.7 = 0;                     
            fire2 = 0;
            putchar('y');
            }  
